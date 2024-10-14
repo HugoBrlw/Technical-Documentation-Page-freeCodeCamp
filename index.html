@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Python_vs_JavaScript"
+            >Python vs JavaScript</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Declaring variables</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#if...else_statement"
+            >if...else statement</a
+          >
+        </li>
+        <li><a class="nav-link" href="#while_statement">while statement</a></li>
+        <li>
+          <a class="nav-link" href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is a versatile, high-level programming language known for its readability and ease of use. Its clear syntax makes it similar to natural language, allowing you to focus on the problem you're solving rather than complex code structures.
+
+
+          </p>
+
+          <p>
+            There are many reasons why Python is so popular, especially for beginners:
+          </p>
+          <ul>
+            <li>
+              Simple and Readable: Python's code is easy to understand, even for those with no prior programming experience.
+            </li>
+            <li>
+              Versatile: Python can be used for various tasks, including web development, data analysis, automation, and scientific computing.
+            </li>
+            <li>
+              Extensive Libraries: Python boasts a vast collection of libraries that provide pre-written code for common functionalities, saving you time and effort.
+              </li>
+              <li>
+                Free and Open-Source: Python is free to use and modify, with a large and supportive community ready to help.
+              </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background and ahve done the following:</p>
+
+          <ul>
+            <li>
+              Install Python: Download and install Python from the official website https://www.python.org/downloads/.
+            </li>
+            <li>Choose an IDE or Text Editor: An Integrated Development Environment (IDE) or a text editor with Python support will make coding more comfortable. Popular options include PyCharm, Visual Studio Code, or IDLE (which comes bundled with Python).</li>
+
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Python_vs_JavaScript">
+        <header>Python vs JavaScript</header>
+        <article>
+          <p>
+            Python is a general-purpose programming language that shines in readability and ease of use. Its clear syntax makes it approachable for beginners and allows programmers to focus on problem-solving rather than complex code structures. This versatility makes Python a favorite for various tasks, including data analysis, machine learning, automation, and even web development on the back-end. Additionally, Python boasts a vast collection of libraries that provide pre-written code for common functionalities, saving time and effort.
+          </p>
+
+          <p>
+            JavaScript, on the other hand, reigns supreme in the world of web development. It's the language that brings interactivity and dynamic elements to life on web pages. While its syntax can be trickier to grasp than Python's, JavaScript's functionality extends beyond the front-end. Frameworks like Node.js allow JavaScript to be used for back-end development as well, making it a well-rounded choice for full-stack web development. JavaScript's immense popularity is further fueled by its use in mobile app development with frameworks like React Native.
+          </p>
+          <p>
+            The best language for you depends on your goals. If your primary focus is web development, especially interactive features, JavaScript is the clear winner. However, for data analysis, scientific computing, or automation, Python's robust libraries like NumPy and pandas make it an unbeatable choice. Beginners will also find Python's simpler syntax more forgiving. Ultimately, you can even pursue both languages! They can complement each other, with Python handling data processing on the back-end and JavaScript powering the interactive front-end of your web application.
+
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          To get started with writing Python, open the Scratchpad and write
+          your first "Hello world" Python code:
+          <code
+            >name = input("Enter your name here: ")
+            print("Hello " + name + ", Hello World!");
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          Variables are containers for storing data values. You use variables as symbolic names for values in your application.
+          The names of variables conform to certain rules.
+        </p>
+        <p>
+          A variable in Python is case sensitive, and joins multiple words with "_". It is often best practice to keep variables in lowercase.
+        </p>
+        <p>
+          You can use ISO 8859-1 or Unicode letters such as å and ü in
+          variables. You can also use the Unicode escape sequences as
+          characters in variables. Some examples of legal names are
+          Number_hits, temp99, and name.
+        </p>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <article>
+          Unlike JavaScript, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+          <p>
+            With the keyword var. For example, <code>x = 5
+y = "John"</code> Variables do not need to be declared with any particular type, and can even change type after they have been set.
+          </p>
+          <p>
+            <code>x = 4       # x is of type int
+x = "Sally" # x is now of type str</code> Python self identifies the type of variable. A variable only containing letters is usually saved as a string, whereas numbers are stored as integers or floats.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <article>
+          <p>In the realm of programming, decision-making is a fundamental skill. It allows programs to navigate complex situations, respond to user input, and ultimately, perform tasks with greater intelligence. Python, a versatile programming language, empowers developers with robust tools for conditional execution. Enter the if-else statement, a cornerstone of Python's decision-making capabilities.</p>
+
+<p>An if-else statement acts as a gatekeeper, controlling the flow of a program's execution based on a given condition. This condition, expressed as a boolean expression (either True or False), dictates which code block is executed. If the condition evaluates to True, the code indented within the if block is carried out. Conversely, if the condition is False, the code within the else block (if present) takes the reins.</p>
+<p>
+The structure of an if-else statement is deceptively simple:
+</p>
+
+          <code>if condition:
+  # code to execute if the condition is True
+else:
+  # code to execute if the condition is False</code>
+          <p>
+            While the basic if-else statement provides a solid foundation, Python equips us for more intricate decision-making scenarios. When faced with multiple conditions, we can leverage two powerful tools:</p>
+            <li>
+              Logical Operators: These operators, AND (and), OR (or), and NOT (not), allow us to combine multiple conditions into a single expression. For instance, the condition age >= 18 and citizenship == "US" checks for both age eligibility and valid citizenship for voting.</li>
+              <li> elif Statements: The else if (elif) statement acts as an extension of the if statement. It allows us to specify additional conditions to check if the initial if statement is False. This creates a chain of conditions, enabling the program to evaluate multiple possibilities before resorting to the else block (if present).</li>
+            Let's revisit the voting example. Now, imagine we want to consider an additional condition for eligibility – residency within a specific district. We can achieve this using logical operators and elif:  
+          </p>
+          <code
+            >if age >= 18 and citizenship == "US":
+  print("You are eligible to vote!")
+elif residency == "District X":
+  print("Welcome to District X! Please verify your registration to vote.")
+else:
+  print("Sorry, you are not eligible to vote in this district.")
+          </code>
+          <p>In this example, the if statement checks for both age and citizenship. If both are True, the program congratulates the user on their eligibility. However, if the initial condition is False, the elif statement steps in. It checks if the user resides in "District X". If so, the program provides instructions for verifying registration. Finally, the else block handles any scenarios where neither of the previous conditions is met.</p>
+          <p>By combining logical operators and elif statements, we can create intricate decision trees within our programs. This empowers us to handle diverse situations with more nuanced logic, making our programs more robust and adaptable.</p>
+
+<p>Remember, the order of if-elif statements is crucial. The program evaluates conditions sequentially, and the first True condition triggers its corresponding code block, effectively stopping further evaluation. So, it's essential to structure your conditions thoughtfully, ensuring the most specific conditions are checked first.</p>
+
+In conclusion, if-else statements with logical operators and elif statements equip Python programmers to navigate complex decision-making landscapes. By mastering these tools, you can craft programs that respond intelligently to various conditions, making your software truly versatile and powerful.
+
+
+
+          </article>
+      </section>
+      <section class="main-section" id="while_statement">
+        <header>while statement</header>
+        <article>
+          In the realm of programming, the ability to repeat a set of instructions efficiently is vital. Python's while loop empowers you to tackle this challenge with elegance. A while loop allows you to execute a block of code repeatedly, as long as a certain condition remains True. This repetitive nature makes while loops ideal for tasks that involve iterating through a sequence of elements or performing an action until a specific criterion is met.
+
+
+          <code>while condition:
+  # code to execute as long as the condition is True
+</code> The heart of the loop lies in the condition. This expression, evaluated before each iteration, dictates the loop's continuation. As long as the condition remains True, the code block nestled within the loop executes. This code block can contain multiple statements, essentially creating a sequence of actions to be repeated. Once the condition eventually evaluates to False, the loop gracefully terminates, moving on to the code following the loop.
+
+
+
+          <p>
+            Imagine a scenario where you want to print the numbers from 1 to 5. Using a while loop, you can achieve this with ease. You can set up a variable count and use a condition like count < 5 to check if count is less than 5. Inside the loop, you can print the current value of count and then increment count by 1. The loop keeps repeating as long as count is less than 5, ensuring each number from 1 to 5 gets printed.
+          </p>
+
+          <p>
+            While loops are not just for counting. Their true power unfolds when applied to various programming tasks. They excel at iterating through elements in lists or strings. Imagine you have a list of names, and you want to greet each person. A while loop can efficiently iterate through the list, printing a personalized greeting for each name.
+
+
+          </p>
+          <p>
+            Furthermore, while loops are instrumental in user input validation. If you need to ensure the user enters a valid number within a specific range, you can use a while loop to keep prompting the user until they provide a valid input. This repetitive nature safeguards your program from unexpected input and ensures smooth operation.
+
+
+          </p>
+<p>While loops are the cornerstone of many games and simulations. Imagine a guessing game where the user has to guess a hidden number. A while loop can be used to keep prompting the user for guesses until they guess correctly. This repetitive structure allows the game to continue until the winning condition is met.
+
+</p>
+          <p>
+            By mastering while loops, you unlock a powerful tool in your Python programming arsenal. They empower you to automate repetitive tasks, iterate through data structures, and create dynamic programs that respond to user input and various conditions. So, the next time you encounter a task requiring repetition, remember the while loop – a simple yet elegant solution for the art of repetition in Python.
+
+
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+          In Python, functions are not declared in the traditional sense like some other languages (e.g., C++). Instead, functions are defined using the def keyword. This definition creates a reusable block of code that can be called throughout your program to perform specific tasks. <p>Here's a breakdown of Python function definition:</p>
+
+<code>def function_name(parameters):
+  """Function docstring (optional)"""
+  # Function body ( indented code block )
+  return value  # Optional return statement</code>
+
+
+
+          <ul>
+            <li>def: This keyword signals the start of a function definition.</li>
+            <li>
+              function_name: This is a name you choose for your function, following Python's naming conventions (lowercase with underscores for separation). It should reflect the function's purpose.
+            </li>
+            <li>
+              parameters: These are optional arguments that the function can accept when called. They are listed within parentheses and separated by commas. Parameters allow you to pass data into the function for processing.
+            </li>
+            <li>Docstring (optional): Docstrings are descriptive text enclosed in triple quotes (""") placed right below the function definition. They explain the function's purpose, parameters, and return value, improving code readability and maintainability.</li>
+            <li>Function body: This indented code block contains the statements that define the function's logic and what it should do.</li>
+            <li>return statement (optional): The return statement is used to send a value back from the function to the code that called it. This value can be a variable, a calculation result, or even another function call. If no return statement is present, the function implicitly returns None.</li>
+            
+          </ul>
+          <p>
+            Example:
+          </p>
+
+          <code>def greet(name):
+  """This function greets a person by name."""
+  print("Hello,", name + "!")
+
+# Call the function with a name
+greet("Alice")
+</code>
+          <p>
+            TIn this example, the greet function takes a single parameter name. The function body concatenates a greeting message with the provided name and prints it using the print function. When the function is called with the argument "Alice", it outputs "Hello, Alice!".
+
+
+          </p>
+  
+        </article>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <article>
+          <p>In closing, Python's control flow statements, if-else, while loops, and function definitions, empower you to create intelligent and versatile programs.</p><p>These fundamental building blocks, along with Python's rich ecosystem of libraries, make it a powerful and beginner-friendly language. As you delve deeper into Python, remember these control flow statements and function definitions – they'll be your companions in crafting creative and impactful programs.</p>
+
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
